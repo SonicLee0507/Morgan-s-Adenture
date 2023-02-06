@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("IsJumping", true);
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpforce;
             extraJumps--;
