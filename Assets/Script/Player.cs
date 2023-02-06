@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     public GameObject explosiondash;
     public GameObject audioDead;
 
+    private bool drawedSH;
     // Start is called before the first frame update
     void Start()
     {
@@ -100,7 +101,9 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.B) && isGrounded==true)
         {
+            drawedSH = true;
             anim.SetTrigger("drawSH");
+            anim.SetBool("drawedSH",true);
         }
     }
     // Update is called once per frame
