@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: 0e21b6aabffc88a4a9ab0a64f7639599
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9074548599303178234
+    second: Morgan_0
+  - first:
+      213: -6287856987810610203
+    second: Morgan_1
+  - first:
+      213: -2210613575492771619
+    second: Morgan_2
+  - first:
+      213: -3733861002952731373
+    second: Morgan_3
+  - first:
+      213: -9012783578734825089
+    second: Morgan_4
+  - first:
+      213: 9170329715318472166
+    second: Morgan_5
+  - first:
+      213: -1370447891608036111
+    second: Morgan_6
+  - first:
+      213: 8800642087075144549
+    second: Morgan_7
+  - first:
+      213: 5066985606700364733
+    second: Morgan_8
+  - first:
+      213: -7967047765862588305
+    second: Morgan_9
+  - first:
+      213: -6381086591249971366
+    second: Morgan_10
+  - first:
+      213: 5631223729420816955
+    second: Morgan_11
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Morgan_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1527
+        width: 626
+        height: 669
+      alignment: 9
+      pivot: {x: 0.53169084, y: 0.12932628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608f381c02ab01280800000000000000
+      internalID: -9074548599303178234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1509
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e34713526b0db8a0800000000000000
+      internalID: -6287856987810610203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_2
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1034
+        width: 454
+        height: 475
+      alignment: 9
+      pivot: {x: 0.52184844, y: 0.29117417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0e8195aa25251e0800000000000000
+      internalID: -2210613575492771619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1032
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315915e5339ae2cc0800000000000000
+      internalID: -3733861002952731373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 653
+        width: 238
+        height: 355
+      alignment: 9
+      pivot: {x: 0.7292259, y: 0.8073569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71790046192ce280800000000000000
+      internalID: -9012783578734825089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_5
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 668
+        width: 224
+        height: 300
+      alignment: 9
+      pivot: {x: 0.16788292, y: 0.7810453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed34c22a4e834f70800000000000000
+      internalID: 9170329715318472166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_6
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 624
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc158d47e03bfce0800000000000000
+      internalID: -1370447891608036111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 440
+        width: 411
+        height: 161
+      alignment: 9
+      pivot: {x: 0.6689407, y: 0.5616102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5636773b959222a70800000000000000
+      internalID: 8800642087075144549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 599
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db37461309c815640800000000000000
+      internalID: 5066985606700364733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_9
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 544
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60e037a44c5f6190800000000000000
+      internalID: -7967047765862588305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 87
+        width: 196
+        height: 264
+      alignment: 9
+      pivot: {x: 0.67712885, y: 0.85694236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57898fbd83d177a0800000000000000
+      internalID: -6381086591249971366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Morgan_11
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 87
+        width: 189
+        height: 289
+      alignment: 9
+      pivot: {x: 0.34255192, y: 0.79174244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32d0ea7520262e40800000000000000
+      internalID: 5631223729420816955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Morgan_5: 9170329715318472166
+      Morgan_6: -1370447891608036111
+      Morgan_11: 5631223729420816955
+      Morgan_1: -6287856987810610203
+      Morgan_10: -6381086591249971366
+      Morgan_2: -2210613575492771619
+      Morgan_7: 8800642087075144549
+      Morgan_9: -7967047765862588305
+      Morgan_8: 5066985606700364733
+      Morgan_3: -3733861002952731373
+      Morgan_0: -9074548599303178234
+      Morgan_4: -9012783578734825089
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
