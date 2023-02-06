@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     public int extraJumpsvalue;
     public GameObject explosiondash;
     public GameObject audioDead;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,6 +97,10 @@ public class Player : MonoBehaviour
         else
         {
             dashTime -= Time.deltaTime;
+        }
+        if (Input.GetKeyDown(KeyCode.B) && isGrounded==true)
+        {
+            anim.SetTrigger("drawSH");
         }
     }
     // Update is called once per frame
