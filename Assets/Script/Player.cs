@@ -40,6 +40,8 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         healthDisplay.text = health.ToString();
         extraJumps = extraJumpsvalue;
+
+        drawedSH = false;
     }
 
     private void Update()
@@ -99,11 +101,16 @@ public class Player : MonoBehaviour
         {
             dashTime -= Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.B) && isGrounded==true)
+        if (Input.GetKeyDown(KeyCode.B) && isGrounded==true&& drawedSH == false)
         {
             drawedSH = true;
             anim.SetTrigger("drawSH");
             anim.SetBool("drawedSH",true);
+        }
+        if (Input.GetKeyDown(KeyCode.V) && isGrounded == true&& drawedSH == true)
+        {
+            drawedSH = false;
+            anim.SetTrigger("SheathSh");
         }
     }
     // Update is called once per frame
