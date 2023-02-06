@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) &&isDashing == false)
+        if (Input.GetKeyDown(KeyCode.LeftShift) &&isDashing == false)
         {
             speed += extraSpeed;
             isDashing = true;

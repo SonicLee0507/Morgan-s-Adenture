@@ -4983,6 +4983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound:
-  - {fileID: 8300000, guid: c39815c87e8e12e46bb88d3fcb2cd058, type: 3}
-  - {fileID: 8300000, guid: 152d5b03f9527974784ef88220599124, type: 3}
   - {fileID: 8300000, guid: de59799f642407d47b45089377e3ff8f, type: 3}
+  - {fileID: 8300000, guid: 672410c13e7195941aad78afb7e7bbe3, type: 3}
+  - {fileID: 8300000, guid: 2b7e1e036ca33bf4a991ac764f07c029, type: 3}
+  - {fileID: 8300000, guid: defe1dbd06b19c541aa6ffe8d7651196, type: 3}

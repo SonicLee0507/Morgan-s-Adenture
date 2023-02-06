@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2249612692921468883}
   - component: {fileID: 8265094206080344574}
   - component: {fileID: 2593266259625353960}
+  - component: {fileID: 7588096507942444841}
   m_Layer: 0
   m_Name: 'Dead '
   m_TagString: Untagged
@@ -142,3 +143,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   second: 2
+--- !u!114 &7588096507942444841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785708588397907876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1636f51ddce0f4e84212b669bc8355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+  - {fileID: 8300000, guid: 75566ab56bd1eb9449690b769ee3d20a, type: 3}
+  - {fileID: 8300000, guid: a0d27139f8ad1454a8bde642b5ab5078, type: 3}
+  - {fileID: 8300000, guid: c9a41e0292c8d0749a4572060a8ff86e, type: 3}
+  - {fileID: 8300000, guid: 8088b5405215ccd4e826aef35f7bc015, type: 3}
+  - {fileID: 8300000, guid: 4e62d76ffc69e31479e0f9c9846ed33d, type: 3}
+  - {fileID: 8300000, guid: 6ce5ce7c1c0b0d04497f35d99603633e, type: 3}
+  - {fileID: 8300000, guid: e857823203c49824dae0c377a05c4edc, type: 3}
+  - {fileID: 8300000, guid: 17111f4b1e7992d44a777f3aace481e3, type: 3}
+  - {fileID: 8300000, guid: 1b08ab94e6933434aa4750d3aae0306e, type: 3}
+  - {fileID: 8300000, guid: a217685961f05874288a0d4370896bff, type: 3}
+  - {fileID: 8300000, guid: 02acc94cee292434d9f70c8f68eded4a, type: 3}
+  - {fileID: 8300000, guid: 199925a0a57b88f4cab1074e0e1bcdb9, type: 3}
+  - {fileID: 8300000, guid: 2dc2a7cd532a2c94ebb7d6e780771950, type: 3}
+  - {fileID: 8300000, guid: 1179c1ef2c73daf4ca371216402d3a3a, type: 3}
+  - {fileID: 8300000, guid: 1113c725879a6414f88b725438bf9e63, type: 3}
+  - {fileID: 8300000, guid: 2574bc518530fe54eae30e12f5da85fa, type: 3}

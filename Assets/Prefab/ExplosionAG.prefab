@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &3232389327384078641
 ParticleSystem:
@@ -4985,4 +4985,5 @@ MonoBehaviour:
   sound:
   - {fileID: 8300000, guid: c39815c87e8e12e46bb88d3fcb2cd058, type: 3}
   - {fileID: 8300000, guid: 152d5b03f9527974784ef88220599124, type: 3}
-  - {fileID: 8300000, guid: 68398eae3a537814cafa52505c857f14, type: 3}
+  - {fileID: 8300000, guid: 30713e203e73b9248af0a85d7937a162, type: 3}
+  - {fileID: 8300000, guid: 740d3caa13d8cc747958e76261e53d62, type: 3}
