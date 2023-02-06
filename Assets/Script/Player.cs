@@ -40,12 +40,13 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         healthDisplay.text = health.ToString();
         extraJumps = extraJumpsvalue;
-
         drawedSH = false;
+
     }
 
     private void Update()
-    {
+    {       
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         // Storing Player's Input
         input = Input.GetAxis("Horizontal");
@@ -101,18 +102,8 @@ public class Player : MonoBehaviour
         {
             dashTime -= Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.B) && isGrounded==true&& drawedSH == false)
-        {
-            drawedSH = true;
-            anim.SetTrigger("drawSH");
-            anim.SetBool("drawedSH",true);
-        }
-        if (Input.GetKeyDown(KeyCode.V) && isGrounded == true&& drawedSH == true)
-        {
-            drawedSH = false;
-            anim.SetTrigger("SheathSh");
-        }
-    }
+
+}
     // Update is called once per frame
     void FixedUpdate()
     {

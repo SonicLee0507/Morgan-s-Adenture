@@ -59,10 +59,10 @@
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\Destory.cs" />
     <Compile Include="Assets\Script\Spawner.cs" />
+    <Compile Include="Assets\Script\RadomSound.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\AudioManager.cs" />
-    <Compile Include="Assets\Script\RadomSound.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
