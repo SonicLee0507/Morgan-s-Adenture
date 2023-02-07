@@ -11,12 +11,14 @@ public class Patrol : MonoBehaviour
     float waitTime;
     public float startWaitTime;
 
+    Animator anim;
 
     // Start is called before the first frame update
     private void Start()
     {
         transform.position = patrolPoints[0].position;
         waitTime = startWaitTime;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class Patrol : MonoBehaviour
 
         if (transform.position == patrolPoints[currentPointIndex].position)
         {
+            anim.SetBool("IsRunning", false);
             if (waitTime <= 0)
             {
             if (currentPointIndex + 1 < patrolPoints.Length)
@@ -44,6 +47,10 @@ public class Patrol : MonoBehaviour
             }
 
 
+        }
+        else
+        {
+            anim.SetBool("IsRunning", true);
         }
     }
 }
