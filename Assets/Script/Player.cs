@@ -31,6 +31,13 @@ public class Player : MonoBehaviour
     public GameObject explosiondash;
     public GameObject audioDead;
 
+    public float timeBetweenAttacks;
+    float nextAttackTime;
+    public Transform attackPoint;
+    public float attackRange;
+    public LayerMask enemyLayer;
+    public int damage;
+
     private bool drawedSH;
     // Start is called before the first frame update
     void Start()
@@ -103,7 +110,39 @@ public class Player : MonoBehaviour
             dashTime -= Time.deltaTime;
         }
 
+        //attack
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetTrigger("attack");
+        }
+        if (Time.time > nextAttackTime)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+
+                anim.SetTrigger("attack");
+                nextAttackTime = Time.time + timeBetweenAttacks;
+            }
+        }
 }
+
+    public void Attack()
+    {
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayer);
+                foreach(Collider2D col in enemiesToDamage)
+                {
+                    col.GetComponent<Enemy>().TakeDamage(damage);
+                }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
