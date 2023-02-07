@@ -8,11 +8,15 @@ public class Patrol : MonoBehaviour
     public float speed;
     int currentPointIndex;
 
+    float waitTime;
+    public float startWaitTime;
+
 
     // Start is called before the first frame update
     private void Start()
     {
         transform.position = patrolPoints[0].position;
+        waitTime = startWaitTime;
     }
 
     // Update is called once per frame
@@ -22,6 +26,8 @@ public class Patrol : MonoBehaviour
 
         if (transform.position == patrolPoints[currentPointIndex].position)
         {
+            if (waitTime <= 0)
+            {
             if (currentPointIndex + 1 < patrolPoints.Length)
             {
                 currentPointIndex++;
@@ -30,6 +36,14 @@ public class Patrol : MonoBehaviour
             {
                 currentPointIndex = 0;
             }
+                waitTime = startWaitTime;
+            }
+            else
+            {
+                waitTime -= Time.deltaTime;
+            }
+
+
         }
     }
 }

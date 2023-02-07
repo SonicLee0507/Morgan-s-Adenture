@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5500374501413062307}
   - component: {fileID: 1758467368}
   - component: {fileID: 1344185833205458245}
+  - component: {fileID: 1082568179}
   m_Layer: 7
   m_Name: Goblin
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   - {fileID: 5500374501914660671}
   - {fileID: 5500374503087069833}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5500374501413062305
 MonoBehaviour:
@@ -70,7 +71,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -212,6 +213,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 30
   health: 100
+--- !u!95 &1082568179
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500374501413062309}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d464cb2a5830b4498ff7123c962a834, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5500374501677330936
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +259,7 @@ Transform:
   m_GameObject: {fileID: 5500374501677330936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.019058824, y: -0.31370234, z: 0}
-  m_LocalScale: {x: 0.17930448, y: 0.17930448, z: 0.17930448}
+  m_LocalScale: {x: 0.1793045, y: 0.17930448, z: 0.1793045}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5500374502219491662}
@@ -324,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5500374501914660670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13200009, y: -0.3915, z: 0}
+  m_LocalPosition: {x: -0.1320001, y: -0.3915, z: 0}
   m_LocalScale: {x: 0.17081538, y: 0.16372654, z: 0.17081538}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -576,7 +597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5500374503087069832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.120000005, y: -0.408, z: 0}
+  m_LocalPosition: {x: 0.12, y: -0.408, z: 0}
   m_LocalScale: {x: 0.18519606, y: 0.18519606, z: 0.18519606}
   m_ConstrainProportionsScale: 0
   m_Children: []
