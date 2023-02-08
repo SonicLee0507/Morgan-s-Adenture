@@ -17,6 +17,7 @@ public class Patrol : MonoBehaviour
     private void Start()
     {
         transform.position = patrolPoints[0].position;
+        transform.rotation = patrolPoints[0].rotation;
         waitTime = startWaitTime;
         anim = GetComponent<Animator>();
     }
@@ -28,14 +29,17 @@ public class Patrol : MonoBehaviour
 
         if (transform.position == patrolPoints[currentPointIndex].position)
         {
+            transform.rotation = patrolPoints[currentPointIndex].rotation;
             anim.SetBool("IsRunning", false);
             if (waitTime <= 0)
             {
-            if (currentPointIndex + 1 < patrolPoints.Length)
+           
+                if (currentPointIndex + 1 < patrolPoints.Length)
             {
                 currentPointIndex++;
             }
-            else
+          
+                else
             {
                 currentPointIndex = 0;
             }
