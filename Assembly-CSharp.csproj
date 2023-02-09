@@ -61,6 +61,7 @@
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Models\UnityCharacter\Scripts\CharacterMovement2D.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\InvokeEventFromInspector.cs" />
     <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\GoblinArrow.cs" />
     <Compile Include="Assets\Script\Patrol.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\SimpleElevator.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\FadeOutNearbyObjects\CinemachineFadeOutNearbyObjects.cs" />
@@ -94,7 +95,6 @@
     <Compile Include="Assets\Script\AudioManager.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\Script\GoblinArrow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\FadeOutNearbyObjects\FadeOut.shader" />
