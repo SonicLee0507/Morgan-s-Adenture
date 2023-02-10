@@ -7,7 +7,6 @@ public class Patrol : MonoBehaviour
     public Transform[] patrolPoints;
     public float speed;
     int currentPointIndex;
-    public int damage;
     float waitTime;
     public float startWaitTime;
 
@@ -57,11 +56,5 @@ public class Patrol : MonoBehaviour
             anim.SetBool("IsRunning", true);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            collision.GetComponent<Player>().TakeDamage(damage);
-        }
-    }
+
 }

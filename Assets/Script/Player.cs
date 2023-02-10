@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     public Transform attackPoint;
     public float attackRange;
     public LayerMask enemyLayer;
-    public int damage;
+    public int pdamage;
 
     private bool drawedSH;
     // Start is called before the first frame update
@@ -131,7 +131,7 @@ public class Player : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPoint.position,attackRange,enemyLayer);
                 foreach(Collider2D col in enemiesToDamage)
                 {
-                    col.GetComponent<Enemy>().TakeDamage(damage);
+                    col.GetComponent<Enemy>().TakeDamage(pdamage);
                 }
     }
 
