@@ -93,10 +93,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4181228329203462934}
-  - component: {fileID: 4181228329203462935}
   - component: {fileID: 4181228329203462928}
   - component: {fileID: 4181228329203462931}
   - component: {fileID: 4181228329203462929}
+  - component: {fileID: 1096362626}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -111,9 +111,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4181228329203462930}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.64, y: -2.57, z: 0}
-  m_LocalScale: {x: 0.49619, y: 0.49619, z: 0.49619}
+  m_LocalScale: {x: 0.2812901, y: 0.2812901, z: 0.2812901}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4181228330020955491}
@@ -121,31 +121,8 @@ Transform:
   - {fileID: 4181228330414913521}
   - {fileID: 4181228329718085132}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4181228329203462935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4181228329203462930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3dd578cd4d5849468f604025547c8a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpforce: 7
-  healthDisplay: {fileID: 0}
-  health: 300
-  isGrounded: 1
-  groundCheck: {fileID: 4181228329718085132}
-  checkRadius: 0.5
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  extraJumpsvalue: 1
 --- !u!50 &4181228329203462928
 Rigidbody2D:
   serializedVersion: 4
@@ -213,6 +190,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1096362626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4181228329203462930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3850a0cb60e623944b85111d2b7e37b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3.8
+  jumpforce: 1.79
+  losepanel: {fileID: 0}
+  healthDisplay: {fileID: 0}
+  health: 111
+  isGrounded: 0
+  groundCheck: {fileID: 4181228329718085132}
+  checkRadius: 0.13
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  startdashTime: 1.51
+  extraSpeed: 1.74
+  extraJumpsvalue: 3
+  explosiondash: {fileID: 0}
+  audioDead: {fileID: 0}
+  timeBetweenAttacks: 0
+  attackPoint: {fileID: 0}
+  attackRange: 0
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  pdamage: 0
 --- !u!1 &4181228329428421170
 GameObject:
   m_ObjectHideFlags: 0
