@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public int edamage;
     public int health;
-
+    public GameObject audioDead;
 
 
 
@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            Instantiate(audioDead, transform.position, Quaternion.identity);
+            Destroy(audioDead, 1f);
             Destroy(gameObject);
         }
     }

@@ -127,6 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   edamage: 50
   health: 50
+  audioDead: {fileID: 3232389327384078643, guid: 6191447e10f51d843a6b1c15260134cc, type: 3}
 --- !u!70 &631950463993364171
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -4800,14 +4800,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133018744}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.899996, y: 26.800001, z: 1.0896246}
-  m_LocalScale: {x: 0.26976058, y: 0.26976058, z: 0.26976058}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -9.899996, y: 27.29, z: 1.0896246}
+  m_LocalScale: {x: 0.1934615, y: 0.1934615, z: 0.1934615}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 258081308}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &1133018746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5027,7 +5027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157063205}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 50.450005, y: 27.950003, z: 1.0896246}
+  m_LocalPosition: {x: 39.4, y: 27.48, z: 1.0896246}
   m_LocalScale: {x: 0.28873086, y: 0.28873086, z: 0.28873086}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7408,6 +7408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   edamage: 70
   health: 20
+  audioDead: {fileID: 0}
 --- !u!61 &1799547639
 BoxCollider2D:
   m_ObjectHideFlags: 0
