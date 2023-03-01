@@ -38,7 +38,11 @@ public class Player : MonoBehaviour
     public LayerMask enemyLayer;
     public int pdamage;
 
-    private bool drawedSH;
+    private float inputVertical;
+    private float inputHorizontal;
+    public float distance;
+    public LayerMask whatIsLadder;
+    private bool isClimbing;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,8 +51,42 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         healthDisplay.text = health.ToString();
         extraJumps = extraJumpsvalue;
-        drawedSH = false;
 
+    }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+
+
+        //Moving Player
+        rb.velocity = new Vector2(input * speed, rb.velocity.y);
+
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, distance,whatIsLadder);
+        if(hitInfo.collider != null)
+        {
+            if (Input.GetKeyDown(KeyCode.W)) {
+                isClimbing = true;
+            }
+        }
+        else
+        {
+            if(Input.GetKeyDown(KeyCode.A)|| (Input.GetKeyDown(KeyCode.D)))
+            {
+            isClimbing = false;
+            }
+
+        }
+        if (isClimbing==true&&hitInfo.collider!=null)
+        {
+            inputVertical = Input.GetAxisRaw("Vertical");
+            rb.velocity = new Vector2(rb.position.x,inputVertical*speed);
+            rb.gravityScale = 0;
+        }
+        else
+        {
+            rb.gravityScale = 1;
+        }
     }
 
     private void Update()
@@ -73,7 +111,7 @@ public class Player : MonoBehaviour
             extraJumps--;
             anim.SetTrigger("takeoff");
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true)
+        else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpforce;
         }
@@ -143,14 +181,6 @@ public class Player : MonoBehaviour
 
 
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-
-
-        //Moving Player
-        rb.velocity = new Vector2(input * speed, rb.velocity.y);
-    }
 
     public void TakeDamage(int damageAmount)
     {
