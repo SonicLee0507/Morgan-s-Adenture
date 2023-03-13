@@ -1,46 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MapPlayerMove : MonoBehaviour
 {
-    public int movespeed = 10;
-    public Transform player;
-    private Vector3 endpos, startpos;
-    // Start is called before the first frame update
-    void Start()
-    {
-        endpos = player.transform.position;
-        startpos = new Vector3(0, 0, -135);
-    }
+	public float speed = 10f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonUp(0))
-        {
-            PlayerMove();
-        }
-        Vector3 targetpos = startpos;
-        transform.position = targetpos;
-        if (endpos != player.transform.position)
-        {
-            player.position = Vector3.MoveTowards(player.position, endpos, Time.deltaTime * movespeed);
-        }
-    }
-    void PlayerMove()
-    {
-        Vector3 cursorPos = Input.mousePosition;
-        Ray ray = Camera.main.ScreenPointToRay(cursorPos);
-        RaycastHit hit;
+	Vector2 lastClickedPos;
 
-        if(Physics.Raycast( ray,out hit, 1000))
-        {
-            if (hit.collider.gameObject.tag == "Terrain")
-            {
-                endpos = hit.point;
-            }
-        }
+	bool moving;
 
-    }
+	private void Update()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			moving = true;
+		}
+
+		if (moving && (Vector2)transform.position != lastClickedPos)
+		{
+			float step = speed * Time.deltaTime;
+			transform.position = Vector2.MoveTowards(transform.position,lastClickedPos, step);
+		}
+
+		else
+		{
+			moving = false;
+		}
+	}
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.gameObject.name =="Gob");
+		{
+			SceneManager.LoadScene("Game");
+		}
+	}
 }
